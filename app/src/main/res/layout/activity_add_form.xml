@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nb.planner.AddForm"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/_taskname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название"/>
+    <EditText
+        android:id="@+id/_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Описание" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Важность"/>
+    <SeekBar
+        android:id="@+id/_importance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выполнить до: "/>
+
+
+    <EditText
+        android:id="@+id/_expdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить задачу"
+        android:onClick="Add" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="На главную"
+        android:onClick="Home"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Список задач"
+        android:onClick="ViewTask"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nb.planner.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ПРИВЕТ!"
+        android:textSize="60dp"/>
+    <TextView
+        android:id="@+id/_totaltasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48dp"
+        android:text="Всего задач "/>
+    <TextView
+        android:id="@+id/_actualtasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="актуальных задач "/>
+    <TextView
+        android:id="@+id/_donetasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="задач выполнено "/>
+
+    <Button
+        android:id="@+id/_addtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить новую задачу"
+        android:textSize="23dp"
+        android:onClick="AddTaskForm"/>
+    <Button
+        android:id="@+id/_viewtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показать задачи"
+        android:textSize="23dp"
+        android:onClick="ViewTask"/>
+
+</LinearLayout>
